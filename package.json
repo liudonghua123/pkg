@@ -1,10 +1,10 @@
 {
-  "name": "pkg",
+  "name": "@liudonghua123/pkg",
   "version": "5.8.1",
   "description": "Package your Node.js project into an executable",
   "main": "lib-es5/index.js",
   "license": "MIT",
-  "repository": "vercel/pkg",
+  "repository": "liudonghua123/pkg",
   "types": "lib-es5/index.d.ts",
   "bin": {
     "pkg": "lib-es5/bin.js"
