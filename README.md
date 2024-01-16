@@ -3,6 +3,10 @@
 > [!IMPORTANT]  
 > `pkg` has been deprecated with `5.8.1` as the last release. There are a number of successful forked versions of `pkg` already with various feature additions. Further, we’re excited about Node.js 21’s support for [single executable applications](https://nodejs.org/api/single-executable-applications.html). Thank you for the support and contributions over the years. The repository will remain open and archived.
 
+**This project [@liudonghua123/pkg](https://github.com/liudonghua123/pkg/) adds node v20 support, needs to use with [@liudonghua123/pkg-fetch](https://github.com/liudonghua123/pkg-fetch/) internally (the dependence is linked and no need to install [@liudonghua123/pkg-fetch](https://github.com/liudonghua123/pkg-fetch/) manually)**
+
+**_I have also started a similar project on https://github.com/liudonghua123/node-sea which use offcial [single executable applications](https://nodejs.org/api/single-executable-applications.html) feature. Just try it as easy as `npm i -g @liudonghua123/node-sea && node-sea -h`._**
+
 This command line interface enables you to package your Node.js project into an executable that can be run even on devices without Node.js installed.
 
 ## Use Cases
@@ -20,7 +24,10 @@ This command line interface enables you to package your Node.js project into an 
 ## Usage
 
 ```sh
-npm install -g pkg
+# uninstall the original pkg if necessary
+npm uninstall -g pkg
+npm install -g @liudonghua123/pkg
+pkg -h
 ```
 
 After installing it, run `pkg --help` without arguments to see list of options:
